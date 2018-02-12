@@ -37,7 +37,7 @@ import (
 
 	"github.com/chzyer/readline"
 	"github.com/spf13/cobra"
-	"github.com/talkimhi/awless-scheduler/client"
+	"github.com/wallix/awless-scheduler/client"
 	"github.com/talkimhi/awless/aws/doc"
 	"github.com/talkimhi/awless/aws/services"
 	"github.com/talkimhi/awless/aws/spec"

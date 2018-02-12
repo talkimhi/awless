@@ -127,7 +127,7 @@
   version = "v1.3.0"
 
 [[projects]]
-  name = "github.com/talkimhi/awless-scheduler"
+  name = "github.com/wallix/awless-scheduler"
   packages = ["client","model"]
   revision = "e49d8194851286ac48b298155cef00aa9fa7534d"
   version = "v0.0.6"

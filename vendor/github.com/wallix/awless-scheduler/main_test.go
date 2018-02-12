@@ -5,7 +5,7 @@ import (
 
 	"time"
 
-	"github.com/talkimhi/awless-scheduler/client"
+	"github.com/wallix/awless-scheduler/client"
 	"github.com/talkimhi/awless/template"
 	"github.com/talkimhi/awless/template/driver"
 )

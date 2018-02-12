@@ -3,7 +3,7 @@ set -e
 # Install on linux only
 # Download latest awless binary from Github
 
-DOWNLOAD_URL=$(curl https://api.github.com/repos/talkimhi/awless-scheduler/releases/latest | grep browser_download_url | sed 's/"browser_download_url": //g' | sed 's/[ ""]//g')
+DOWNLOAD_URL=$(curl https://api.github.com/repos/wallix/awless-scheduler/releases/latest | grep browser_download_url | sed 's/"browser_download_url": //g' | sed 's/[ ""]//g')
 
 echo "Downloading scheduler from $DOWNLOAD_URL"
 

@@ -17,7 +17,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/talkimhi/awless-scheduler/model"
+	"github.com/wallix/awless-scheduler/model"
 	"github.com/talkimhi/awless/aws/driver"
 	"github.com/talkimhi/awless/aws/services"
 	"github.com/talkimhi/awless/template"
