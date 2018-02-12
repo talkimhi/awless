@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-
+#kimhi
 # Download latest awless binary from Github
 
 ARCH_UNAME=`uname -m`
