@@ -27,7 +27,7 @@ Clients use the discovery service to know where the scheduler service is running
 
 # Usage with the `awless` CLI
 
-The scheduler is mostly used together with the [`awless` CLI](https://github.com/wallix/awless).
+The scheduler is mostly used together with the [`awless` CLI](https://github.com/talkimhi/awless).
 
 From the CLI you can run one-liner, file or remote template and specify the following flags to run your template at a later date:
 

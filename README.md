@@ -1,18 +1,18 @@
 
 
-[![Build Status](https://api.travis-ci.org/wallix/awless.svg?branch=master)](https://travis-ci.org/wallix/awless)
-[![Go Report Card](https://goreportcard.com/badge/github.com/wallix/awless)](https://goreportcard.com/report/github.com/wallix/awless)
+[![Build Status](https://api.travis-ci.org/talkimhi/awless.svg?branch=master)](https://travis-ci.org/talkimhi/awless)
+[![Go Report Card](https://goreportcard.com/badge/github.com/talkimhi/awless)](https://goreportcard.com/report/github.com/talkimhi/awless)
 
 <img src="https://user-images.githubusercontent.com/808274/33351381-5b9a0d00-d458-11e7-91ed-cf7ada7237c1.png" alt="terminal icon" width="48"> `awless` is a powerful, innovative and small surface command line interface (CLI) to manage Amazon Web Services.
 
-[Twitter](http://twitter.com/awlessCLI) | [Wiki](https://github.com/wallix/awless/wiki) | [Changelog](https://github.com/wallix/awless/blob/master/CHANGELOG.md#readme)
+[Twitter](http://twitter.com/awlessCLI) | [Wiki](https://github.com/talkimhi/awless/wiki) | [Changelog](https://github.com/talkimhi/awless/blob/master/CHANGELOG.md#readme)
 
 # Why awless
 
 `awless` stands out by providing the following features:
 
 - small and hierarchical set of commands
-- create and revert fully-fledged infrastructures through a new simple and powerful templating language (see [`awless` templates (wiki)](https://github.com/wallix/awless/wiki/Templates))
+- create and revert fully-fledged infrastructures through a new simple and powerful templating language (see [`awless` templates (wiki)](https://github.com/talkimhi/awless/wiki/Templates))
 - local log of all your cloud modifications done through `awless`
 - exploration of your cloud infrastructure and resources relations, **even offline** using a local graph storage
 - greater output's readability with numerous machine and human friendly formats
@@ -24,15 +24,15 @@
 
 Choose one of the following options:
 
-1. On macOS, use [homebrew](http://brew.sh):  `brew tap wallix/awless; brew install awless`
-2. With `curl` (macOS/Linux), run: `curl https://raw.githubusercontent.com/wallix/awless/master/getawless.sh | bash`
-3. Download the latest `awless` binaries (Windows/Linux/macOS) [from Github](https://github.com/wallix/awless/releases/latest)
-4. If you have Golang already installed, install from the source with: `go get -u github.com/wallix/awless`
+1. On macOS, use [homebrew](http://brew.sh):  `brew tap talkimhi/awless; brew install awless`
+2. With `curl` (macOS/Linux), run: `curl https://raw.githubusercontent.com/talkimhi/awless/master/getawless.sh | bash`
+3. Download the latest `awless` binaries (Windows/Linux/macOS) [from Github](https://github.com/talkimhi/awless/releases/latest)
+4. If you have Golang already installed, install from the source with: `go get -u github.com/talkimhi/awless`
 
 # Main Features
 
 <p align="center">
-  <a href="https://raw.githubusercontent.com/wiki/wallix/awless/apng/awless-demo.png"><img src="https://raw.githubusercontent.com/wiki/wallix/awless/apng/awless-demo.png" alt="video of a few awless commands"></a>
+  <a href="https://raw.githubusercontent.com/wiki/talkimhi/awless/apng/awless-demo.png"><img src="https://raw.githubusercontent.com/wiki/talkimhi/awless/apng/awless-demo.png" alt="video of a few awless commands"></a>
 <br/>
 <em>Note that the video above is in <a href="https://en.wikipedia.org/wiki/APNG">APNG</a> and requires a recent browser.</em>
 </p>
@@ -57,7 +57,7 @@ Choose one of the following options:
 
 # Getting started
 
-Take the tour at [Getting Started (wiki)](https://github.com/wallix/awless/wiki/Getting-Started).
+Take the tour at [Getting Started (wiki)](https://github.com/talkimhi/awless/wiki/Getting-Started).
 
 Or read the [introductory blog post about awless](https://medium.com/@hbbio/awless-io-a-mighty-cli-for-aws-a0d48bdb59a4).
 
@@ -65,7 +65,7 @@ More articles:
 
    - [Simplified user management for AWS](https://medium.com/@awlessCLI/simplified-user-management-for-aws-6f828ccab387)
    - [InfoWorld: Production-grade deployment of WordPress](https://www.infoworld.com/article/3230547/cloud-computing/awless-tutorial-try-a-smarter-cli-for-aws.html)
-   - [Easy create & tear down of a multi-AZ CockroachDB cluster](https://github.com/wallix/awless-templates/tree/master/cockroachdb)
+   - [Easy create & tear down of a multi-AZ CockroachDB cluster](https://github.com/talkimhi/awless-templates/tree/master/cockroachdb)
 
 # Awards
 
@@ -81,5 +81,5 @@ More articles:
     we will not be responsible for any cloud costs incurred (even if you create a 
     million instances using awless templates).
 
-Contributors are welcome! Please head to [Contributing (wiki)](https://github.com/wallix/awless/wiki/Contributing) to learn more.
+Contributors are welcome! Please head to [Contributing (wiki)](https://github.com/talkimhi/awless/wiki/Contributing) to learn more.
 Note that `awless` uses [triplestore](https://github.com/wallix/triplestore) another project developped at WALLIX.

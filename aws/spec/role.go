@@ -19,13 +19,13 @@ import (
 	"errors"
 	"time"
 
-	"github.com/wallix/awless/cloud"
-	"github.com/wallix/awless/template/env"
-	"github.com/wallix/awless/template/params"
+	"github.com/talkimhi/awless/cloud"
+	"github.com/talkimhi/awless/template/env"
+	"github.com/talkimhi/awless/template/params"
 
 	"github.com/aws/aws-sdk-go/service/iam"
 	"github.com/aws/aws-sdk-go/service/iam/iamiface"
-	"github.com/wallix/awless/logger"
+	"github.com/talkimhi/awless/logger"
 )
 
 type CreateRole struct {

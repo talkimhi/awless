@@ -23,7 +23,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/wallix/awless/template/internal/ast"
+	"github.com/talkimhi/awless/template/internal/ast"
 )
 
 func TestParseTemplatesWithList(t *testing.T) {

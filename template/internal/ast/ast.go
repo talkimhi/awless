@@ -22,8 +22,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/wallix/awless/template/env"
-	"github.com/wallix/awless/template/params"
+	"github.com/talkimhi/awless/template/env"
+	"github.com/talkimhi/awless/template/params"
 )
 
 type Node interface {

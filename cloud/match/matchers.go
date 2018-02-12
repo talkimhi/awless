@@ -20,7 +20,7 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/wallix/awless/cloud"
+	"github.com/talkimhi/awless/cloud"
 )
 
 type and struct {

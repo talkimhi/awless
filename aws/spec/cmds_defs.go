@@ -1,6 +1,6 @@
 package awsspec
 
-import "github.com/wallix/awless/template/params"
+import "github.com/talkimhi/awless/template/params"
 
 type Definition struct {
 	Action, Entity, Api string

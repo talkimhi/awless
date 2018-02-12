@@ -20,7 +20,7 @@ import (
 	"strings"
 
 	"github.com/spf13/cobra"
-	"github.com/wallix/awless/web"
+	"github.com/talkimhi/awless/web"
 )
 
 var (

@@ -19,9 +19,9 @@ import (
 	awssdk "github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/ec2"
 	"github.com/aws/aws-sdk-go/service/ec2/ec2iface"
-	"github.com/wallix/awless/cloud"
-	"github.com/wallix/awless/logger"
-	"github.com/wallix/awless/template/params"
+	"github.com/talkimhi/awless/cloud"
+	"github.com/talkimhi/awless/logger"
+	"github.com/talkimhi/awless/template/params"
 )
 
 type CreateInternetgateway struct {

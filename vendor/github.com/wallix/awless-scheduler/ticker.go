@@ -4,7 +4,7 @@ import (
 	"log"
 	"time"
 
-	"github.com/wallix/awless-scheduler/model"
+	"github.com/talkimhi/awless-scheduler/model"
 )
 
 type ticker struct {

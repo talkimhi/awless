@@ -20,7 +20,7 @@ import (
 	"fmt"
 
 	"github.com/spf13/cobra"
-	"github.com/wallix/awless/config"
+	"github.com/talkimhi/awless/config"
 )
 
 func init() {

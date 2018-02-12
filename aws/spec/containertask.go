@@ -21,15 +21,15 @@ import (
 	"strings"
 	"time"
 
-	"github.com/wallix/awless/cloud"
-	"github.com/wallix/awless/template/env"
-	"github.com/wallix/awless/template/params"
+	"github.com/talkimhi/awless/cloud"
+	"github.com/talkimhi/awless/template/env"
+	"github.com/talkimhi/awless/template/params"
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/awserr"
 	"github.com/aws/aws-sdk-go/service/ecs"
 	"github.com/aws/aws-sdk-go/service/ecs/ecsiface"
-	"github.com/wallix/awless/logger"
+	"github.com/talkimhi/awless/logger"
 )
 
 type StartContainertask struct {

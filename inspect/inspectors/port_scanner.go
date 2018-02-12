@@ -22,9 +22,9 @@ import (
 	"net"
 	"strings"
 
-	"github.com/wallix/awless/cloud"
-	"github.com/wallix/awless/cloud/rdf"
-	"github.com/wallix/awless/graph"
+	"github.com/talkimhi/awless/cloud"
+	"github.com/talkimhi/awless/cloud/rdf"
+	"github.com/talkimhi/awless/graph"
 )
 
 type PortScanner struct {

@@ -37,18 +37,18 @@ import (
 
 	"github.com/chzyer/readline"
 	"github.com/spf13/cobra"
-	"github.com/wallix/awless-scheduler/client"
-	"github.com/wallix/awless/aws/doc"
-	"github.com/wallix/awless/aws/services"
-	"github.com/wallix/awless/aws/spec"
-	"github.com/wallix/awless/cloud"
-	"github.com/wallix/awless/cloud/match"
-	"github.com/wallix/awless/cloud/properties"
-	"github.com/wallix/awless/config"
-	"github.com/wallix/awless/logger"
-	"github.com/wallix/awless/sync"
-	"github.com/wallix/awless/template"
-	"github.com/wallix/awless/template/params"
+	"github.com/talkimhi/awless-scheduler/client"
+	"github.com/talkimhi/awless/aws/doc"
+	"github.com/talkimhi/awless/aws/services"
+	"github.com/talkimhi/awless/aws/spec"
+	"github.com/talkimhi/awless/cloud"
+	"github.com/talkimhi/awless/cloud/match"
+	"github.com/talkimhi/awless/cloud/properties"
+	"github.com/talkimhi/awless/config"
+	"github.com/talkimhi/awless/logger"
+	"github.com/talkimhi/awless/sync"
+	"github.com/talkimhi/awless/template"
+	"github.com/talkimhi/awless/template/params"
 )
 
 var (
@@ -62,7 +62,7 @@ var (
 
 func init() {
 	RootCmd.AddCommand(runCmd)
-	runCmd.Flags().BoolVar(&listRemoteTemplatesFlag, "list", false, "List templates available at https://github.com/wallix/awless-templates")
+	runCmd.Flags().BoolVar(&listRemoteTemplatesFlag, "list", false, "List templates available at https://github.com/talkimhi/awless-templates")
 	runCmd.Flags().StringVar(&scheduleRunInFlag, "run-in", "", "Postpone the execution of this template")
 	runCmd.Flags().StringVar(&scheduleRevertInFlag, "revert-in", "", "Schedule the revertion of this template")
 	runCmd.Flags().StringVarP(&runLogMessage, "message", "m", "", "Add a message for this template execution to be persisted in your logs")
@@ -88,7 +88,7 @@ const maxMsgLen = 140
 var runCmd = &cobra.Command{
 	Use:               "run PATH",
 	Short:             "Run a template given a filepath or URL",
-	Example:           "  awless run ~/templates/my-infra.aws\n  awless run https://raw.githubusercontent.com/wallix/awless-templates/master/create_vpc.aws\n  awless run repo:create_vpc",
+	Example:           "  awless run ~/templates/my-infra.aws\n  awless run https://raw.githubusercontent.com/talkimhi/awless-templates/master/create_vpc.aws\n  awless run repo:create_vpc",
 	PersistentPreRun:  applyHooks(initLoggerHook, initAwlessEnvHook, initCloudServicesHook, initSyncerHook, firstInstallDoneHook),
 	PersistentPostRun: applyHooks(verifyNewVersionHook, onVersionUpgrade, networkMonitorHook),
 
@@ -455,7 +455,7 @@ func oneLinerShortDesc(action string, entities []string) string {
 }
 
 const (
-	DEFAULT_REPO_PREFIX = "https://raw.githubusercontent.com/wallix/awless-templates/master"
+	DEFAULT_REPO_PREFIX = "https://raw.githubusercontent.com/talkimhi/awless-templates/master"
 	FILE_EXT            = ".aws"
 )
 

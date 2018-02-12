@@ -9,7 +9,7 @@ To fuzz the template decoding for instance do the following steps:
 1. Build with
 
 ```sh
-go-fuzz-build github.com/wallix/awless/template/fuzz/{parsing,parameters}
+go-fuzz-build github.com/talkimhi/awless/template/fuzz/{parsing,parameters}
 ```
 
 2. Then

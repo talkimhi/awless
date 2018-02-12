@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/wallix/awless/template/env"
-	"github.com/wallix/awless/template/internal/ast"
-	"github.com/wallix/awless/template/params"
+	"github.com/talkimhi/awless/template/env"
+	"github.com/talkimhi/awless/template/internal/ast"
+	"github.com/talkimhi/awless/template/params"
 )
 
 type Mode []compileFunc

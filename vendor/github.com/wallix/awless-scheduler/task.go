@@ -9,9 +9,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/wallix/awless-scheduler/model"
-	"github.com/wallix/awless/template"
-	"github.com/wallix/awless/template/driver"
+	"github.com/talkimhi/awless-scheduler/model"
+	"github.com/talkimhi/awless/template"
+	"github.com/talkimhi/awless/template/driver"
 )
 
 func New(filePath string) (tk *model.Task, err error) {

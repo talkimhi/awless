@@ -51,7 +51,7 @@ update securitygroup cidr=0.0.0.0/0 id=$secgroup protocol=tcp inbound=revoke por
 update securitygroup cidr=10.0.0.0/16 id=$secgroup protocol=udp outbound=authorize portrange=22-24
 update securitygroup cidr=10.0.0.0/16 id=$secgroup protocol=udp outbound=revoke portrange=22-24
 check securitygroup id=$secgroup state=unused timeout=10
-instance = create instance count=1 image=ami-f1949e95 name=my-full-test-inst subnet=$subnet type=t2.nano ip=10.0.0.5 keypair=$keypair lock=true role=my-full-test-role securitygroup=$secgroup userdata=https://raw.githubusercontent.com/wallix/awless-templates/master/userdata/install_awless.yml
+instance = create instance count=1 image=ami-f1949e95 name=my-full-test-inst subnet=$subnet type=t2.nano ip=10.0.0.5 keypair=$keypair lock=true role=my-full-test-role securitygroup=$secgroup userdata=https://raw.githubusercontent.com/talkimhi/awless-templates/master/userdata/install_awless.yml
 update instance id=$instance lock=false
 secgroup2 = create securitygroup description="my second security group description" name=my-full-test-securitygroup2 vpc=$vpc
 attach securitygroup id=$secgroup2 instance=$instance
@@ -91,8 +91,8 @@ create listener actiontype=forward loadbalancer=$lb port=80 protocol=HTTP target
 check instance id=$lbinstance state=running timeout=180
 attach instance id=$lbinstance targetgroup=$tg port=80
 detach instance id=$lbinstance targetgroup=$tg
-create launchconfiguration image=ami-f1949e95 name=unused-launchconfiguration type=t2.nano keypair=$keypair public=true role=my-full-test-role securitygroups=$secgroup spotprice=0.01 userdata=https://raw.githubusercontent.com/wallix/awless-templates/master/userdata/install_awless.yml
-launchconfig = create launchconfiguration image=ami-f1949e95 name=my-full-test-launchconfiguration type=t2.nano keypair=$keypair public=true role=my-full-test-role securitygroups=$secgroup userdata=https://raw.githubusercontent.com/wallix/awless-templates/master/userdata/install_awless.yml
+create launchconfiguration image=ami-f1949e95 name=unused-launchconfiguration type=t2.nano keypair=$keypair public=true role=my-full-test-role securitygroups=$secgroup spotprice=0.01 userdata=https://raw.githubusercontent.com/talkimhi/awless-templates/master/userdata/install_awless.yml
+launchconfig = create launchconfiguration image=ami-f1949e95 name=my-full-test-launchconfiguration type=t2.nano keypair=$keypair public=true role=my-full-test-role securitygroups=$secgroup userdata=https://raw.githubusercontent.com/talkimhi/awless-templates/master/userdata/install_awless.yml
 scalgroup = create scalinggroup launchconfiguration=$launchconfig max-size=3 min-size=1 name=my-full-test-scalinggroup subnets=$subnet cooldown=20 desired-capacity=2 healthcheck-grace-period=20 healthcheck-type=EC2 new-instances-protected=false
 update scalinggroup name=$scalgroup cooldown=10 desired-capacity=1 healthcheck-grace-period=10 healthcheck-type=EC2 launchconfiguration=$launchconfig max-size=2 min-size=1 new-instances-protected=false subnets=$subnet
 check scalinggroup count=1 name=$scalgroup timeout=180

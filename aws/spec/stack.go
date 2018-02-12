@@ -23,13 +23,13 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/wallix/awless/cloud"
-	"github.com/wallix/awless/template/env"
-	"github.com/wallix/awless/template/params"
+	"github.com/talkimhi/awless/cloud"
+	"github.com/talkimhi/awless/template/env"
+	"github.com/talkimhi/awless/template/params"
 
 	"github.com/aws/aws-sdk-go/service/cloudformation"
 	"github.com/aws/aws-sdk-go/service/cloudformation/cloudformationiface"
-	"github.com/wallix/awless/logger"
+	"github.com/talkimhi/awless/logger"
 	"gopkg.in/yaml.v2"
 )
 
@@ -66,7 +66,7 @@ func (cmd *CreateStack) ExtractResult(i interface{}) string {
 }
 
 // Add StackFile support via BeforeRun hook
-// https://github.com/wallix/awless/issues/145
+// https://github.com/talkimhi/awless/issues/145
 // http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/continuous-delivery-codepipeline-cfn-artifacts.html
 func (cmd *CreateStack) BeforeRun(renv env.Running) error {
 	var err error
@@ -105,7 +105,7 @@ func (cmd *UpdateStack) ExtractResult(i interface{}) string {
 }
 
 // Add StackFile support via BeforeRun hook
-// https://github.com/wallix/awless/issues/145
+// https://github.com/talkimhi/awless/issues/145
 // http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/continuous-delivery-codepipeline-cfn-artifacts.html
 func (cmd *UpdateStack) BeforeRun(renv env.Running) error {
 	var err error

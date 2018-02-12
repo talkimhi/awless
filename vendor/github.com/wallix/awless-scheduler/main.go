@@ -17,11 +17,11 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/wallix/awless-scheduler/model"
-	"github.com/wallix/awless/aws/driver"
-	"github.com/wallix/awless/aws/services"
-	"github.com/wallix/awless/template"
-	"github.com/wallix/awless/template/driver"
+	"github.com/talkimhi/awless-scheduler/model"
+	"github.com/talkimhi/awless/aws/driver"
+	"github.com/talkimhi/awless/aws/services"
+	"github.com/talkimhi/awless/template"
+	"github.com/talkimhi/awless/template/driver"
 )
 
 var (

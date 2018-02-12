@@ -9,7 +9,7 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/wallix/awless-scheduler/model"
+	"github.com/talkimhi/awless-scheduler/model"
 )
 
 type store interface {

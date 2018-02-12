@@ -20,8 +20,8 @@ package awsspec
 import (
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/awstesting/mock"
-	"github.com/wallix/awless/cloud"
-	"github.com/wallix/awless/logger"
+	"github.com/talkimhi/awless/cloud"
+	"github.com/talkimhi/awless/logger"
 )
 
 type Factory interface {

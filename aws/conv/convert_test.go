@@ -23,7 +23,7 @@ import (
 	"testing"
 
 	awssdk "github.com/aws/aws-sdk-go/aws"
-	"github.com/wallix/awless/graph"
+	"github.com/talkimhi/awless/graph"
 
 	"github.com/aws/aws-sdk-go/service/ec2"
 )

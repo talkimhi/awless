@@ -64,11 +64,11 @@ import (
 	"github.com/aws/aws-sdk-go/service/sqs/sqsiface"
 	"github.com/aws/aws-sdk-go/service/sts"
 	"github.com/aws/aws-sdk-go/service/sts/stsiface"
-	"github.com/wallix/awless/aws/fetch"
-	"github.com/wallix/awless/cloud"
-	"github.com/wallix/awless/fetch"
-	"github.com/wallix/awless/graph"
-	"github.com/wallix/awless/logger"
+	"github.com/talkimhi/awless/aws/fetch"
+	"github.com/talkimhi/awless/cloud"
+	"github.com/talkimhi/awless/fetch"
+	"github.com/talkimhi/awless/graph"
+	"github.com/talkimhi/awless/logger"
 	tstore "github.com/wallix/triplestore"
 )
 

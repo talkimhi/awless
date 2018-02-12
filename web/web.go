@@ -11,14 +11,14 @@ import (
 	"path/filepath"
 
 	"github.com/gorilla/mux"
-	"github.com/wallix/awless/aws/services"
-	"github.com/wallix/awless/cloud"
-	"github.com/wallix/awless/cloud/properties"
-	"github.com/wallix/awless/cloud/rdf"
-	"github.com/wallix/awless/config"
-	"github.com/wallix/awless/graph"
-	"github.com/wallix/awless/sync"
-	"github.com/wallix/awless/sync/repo"
+	"github.com/talkimhi/awless/aws/services"
+	"github.com/talkimhi/awless/cloud"
+	"github.com/talkimhi/awless/cloud/properties"
+	"github.com/talkimhi/awless/cloud/rdf"
+	"github.com/talkimhi/awless/config"
+	"github.com/talkimhi/awless/graph"
+	"github.com/talkimhi/awless/sync"
+	"github.com/talkimhi/awless/sync/repo"
 	tstore "github.com/wallix/triplestore"
 )
 

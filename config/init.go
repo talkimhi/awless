@@ -23,8 +23,8 @@ import (
 
 	"strconv"
 
-	"github.com/wallix/awless/aws/services"
-	"github.com/wallix/awless/database"
+	"github.com/talkimhi/awless/aws/services"
+	"github.com/talkimhi/awless/database"
 )
 
 var (

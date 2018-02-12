@@ -23,7 +23,7 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/wallix/awless/gen/aws"
+	"github.com/talkimhi/awless/gen/aws"
 )
 
 func generateServicesFuncs() {
@@ -84,11 +84,11 @@ import (
   "github.com/aws/aws-sdk-go/service/{{ $api }}/{{ $api }}iface"
   {{- end }}
   {{- end }}
-	"github.com/wallix/awless/cloud"
-	"github.com/wallix/awless/config"
-	"github.com/wallix/awless/logger"
-	"github.com/wallix/awless/fetch"
-	"github.com/wallix/awless/aws/fetch"
+	"github.com/talkimhi/awless/cloud"
+	"github.com/talkimhi/awless/config"
+	"github.com/talkimhi/awless/logger"
+	"github.com/talkimhi/awless/fetch"
+	"github.com/talkimhi/awless/aws/fetch"
 	tstore "github.com/wallix/triplestore"
 )
 

@@ -28,15 +28,15 @@ import (
 	"time"
 
 	"github.com/spf13/cobra"
-	"github.com/wallix/awless/aws/services"
-	"github.com/wallix/awless/cloud"
-	"github.com/wallix/awless/cloud/match"
-	"github.com/wallix/awless/cloud/properties"
-	"github.com/wallix/awless/config"
-	"github.com/wallix/awless/console"
-	"github.com/wallix/awless/graph"
-	"github.com/wallix/awless/logger"
-	"github.com/wallix/awless/ssh"
+	"github.com/talkimhi/awless/aws/services"
+	"github.com/talkimhi/awless/cloud"
+	"github.com/talkimhi/awless/cloud/match"
+	"github.com/talkimhi/awless/cloud/properties"
+	"github.com/talkimhi/awless/config"
+	"github.com/talkimhi/awless/console"
+	"github.com/talkimhi/awless/graph"
+	"github.com/talkimhi/awless/logger"
+	"github.com/talkimhi/awless/ssh"
 )
 
 var keyPathFlag, proxyInstanceThroughFlag string

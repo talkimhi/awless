@@ -22,18 +22,18 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/wallix/awless/cloud/match"
-	"github.com/wallix/awless/template/env"
-	"github.com/wallix/awless/template/params"
+	"github.com/talkimhi/awless/cloud/match"
+	"github.com/talkimhi/awless/template/env"
+	"github.com/talkimhi/awless/template/params"
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/credentials"
 	"github.com/aws/aws-sdk-go/service/iam"
 	"github.com/aws/aws-sdk-go/service/iam/iamiface"
-	"github.com/wallix/awless/aws/config"
-	"github.com/wallix/awless/cloud"
-	"github.com/wallix/awless/cloud/properties"
-	"github.com/wallix/awless/logger"
+	"github.com/talkimhi/awless/aws/config"
+	"github.com/talkimhi/awless/cloud"
+	"github.com/talkimhi/awless/cloud/properties"
+	"github.com/talkimhi/awless/logger"
 )
 
 type CreateAccesskey struct {

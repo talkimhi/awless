@@ -26,11 +26,11 @@ import (
 	"time"
 
 	"github.com/spf13/cobra"
-	"github.com/wallix/awless/aws/services"
-	"github.com/wallix/awless/cloud"
-	"github.com/wallix/awless/config"
-	"github.com/wallix/awless/logger"
-	"github.com/wallix/awless/sync"
+	"github.com/talkimhi/awless/aws/services"
+	"github.com/talkimhi/awless/cloud"
+	"github.com/talkimhi/awless/config"
+	"github.com/talkimhi/awless/logger"
+	"github.com/talkimhi/awless/sync"
 )
 
 var (

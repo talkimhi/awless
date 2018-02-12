@@ -22,10 +22,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/wallix/awless/cloud"
-	"github.com/wallix/awless/cloud/match"
-	"github.com/wallix/awless/cloud/properties"
-	"github.com/wallix/awless/cloud/rdf"
+	"github.com/talkimhi/awless/cloud"
+	"github.com/talkimhi/awless/cloud/match"
+	"github.com/talkimhi/awless/cloud/properties"
+	"github.com/talkimhi/awless/cloud/rdf"
 	tstore "github.com/wallix/triplestore"
 )
 

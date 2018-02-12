@@ -9,7 +9,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/wallix/awless-scheduler/model"
+	"github.com/talkimhi/awless-scheduler/model"
 )
 
 func TestUnixSockClient(t *testing.T) {

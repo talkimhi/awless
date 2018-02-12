@@ -24,9 +24,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/wallix/awless/cloud"
-	"github.com/wallix/awless/template/env"
-	"github.com/wallix/awless/template/params"
+	"github.com/talkimhi/awless/cloud"
+	"github.com/talkimhi/awless/template/env"
+	"github.com/talkimhi/awless/template/params"
 
 	"github.com/aws/aws-sdk-go/service/iam"
 	"github.com/aws/aws-sdk-go/service/iam/iamiface"
@@ -34,8 +34,8 @@ import (
 	"github.com/boombuler/barcode/qr"
 	"github.com/chzyer/readline"
 	"github.com/fatih/color"
-	"github.com/wallix/awless/aws/config"
-	"github.com/wallix/awless/logger"
+	"github.com/talkimhi/awless/aws/config"
+	"github.com/talkimhi/awless/logger"
 )
 
 type CreateMfadevice struct {

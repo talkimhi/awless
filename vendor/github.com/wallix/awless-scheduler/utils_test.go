@@ -4,9 +4,9 @@ import (
 	"errors"
 	"io/ioutil"
 
-	"github.com/wallix/awless/logger"
-	"github.com/wallix/awless/template"
-	"github.com/wallix/awless/template/driver"
+	"github.com/talkimhi/awless/logger"
+	"github.com/talkimhi/awless/template"
+	"github.com/talkimhi/awless/template/driver"
 )
 
 func newTemplateEnv(fn func(string) (template.Definition, bool)) *template.Env {

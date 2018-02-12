@@ -22,7 +22,7 @@ import (
 	"path/filepath"
 	"text/template"
 
-	"github.com/wallix/awless/gen/aws"
+	"github.com/talkimhi/awless/gen/aws"
 )
 
 func generateProperties() {
@@ -105,7 +105,7 @@ limitations under the License.
 // This file was automatically generated with go generate
 package rdf
 
-import "github.com/wallix/awless/cloud/properties"
+import "github.com/talkimhi/awless/cloud/properties"
 
 const (
   {{- range $, $prop := . }}

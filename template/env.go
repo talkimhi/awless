@@ -3,8 +3,8 @@ package template
 import (
 	"sync"
 
-	"github.com/wallix/awless/logger"
-	"github.com/wallix/awless/template/env"
+	"github.com/talkimhi/awless/logger"
+	"github.com/talkimhi/awless/template/env"
 )
 
 var (

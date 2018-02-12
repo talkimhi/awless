@@ -5,8 +5,8 @@ import (
 
 	"log"
 
-	"github.com/wallix/awless-scheduler/model"
-	"github.com/wallix/awless/template"
+	"github.com/talkimhi/awless-scheduler/model"
+	"github.com/talkimhi/awless/template"
 )
 
 type event struct {

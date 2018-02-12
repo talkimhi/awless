@@ -26,14 +26,14 @@ import (
 
 	"github.com/fatih/color"
 	"github.com/spf13/cobra"
-	"github.com/wallix/awless/aws/config"
-	"github.com/wallix/awless/cloud"
-	"github.com/wallix/awless/cloud/properties"
-	"github.com/wallix/awless/cloud/rdf"
-	"github.com/wallix/awless/config"
-	"github.com/wallix/awless/console"
-	"github.com/wallix/awless/logger"
-	"github.com/wallix/awless/sync"
+	"github.com/talkimhi/awless/aws/config"
+	"github.com/talkimhi/awless/cloud"
+	"github.com/talkimhi/awless/cloud/properties"
+	"github.com/talkimhi/awless/cloud/rdf"
+	"github.com/talkimhi/awless/config"
+	"github.com/talkimhi/awless/console"
+	"github.com/talkimhi/awless/logger"
+	"github.com/talkimhi/awless/sync"
 )
 
 var (

@@ -11,7 +11,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/wallix/awless-scheduler/model"
+	"github.com/talkimhi/awless-scheduler/model"
 )
 
 type Client struct {

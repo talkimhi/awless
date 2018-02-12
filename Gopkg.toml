@@ -58,7 +58,7 @@
   name = "github.com/spf13/cobra"
 
 [[constraint]]
-  name = "github.com/wallix/awless-scheduler"
+  name = "github.com/talkimhi/awless-scheduler"
   version = "0.0.6"
 
 [[constraint]]

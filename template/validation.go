@@ -5,7 +5,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/wallix/awless/cloud"
+	"github.com/talkimhi/awless/cloud"
 )
 
 type Validator interface {

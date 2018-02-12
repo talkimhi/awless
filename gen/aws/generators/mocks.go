@@ -23,7 +23,7 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/wallix/awless/gen/aws"
+	"github.com/talkimhi/awless/gen/aws"
 )
 
 func generateTestMocks() {
