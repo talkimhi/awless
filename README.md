@@ -59,9 +59,11 @@ More articles:
 
  1. Launch an AWS EC2 Instance with SSM Agent and SSM IAM Role ([How-to](https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-install-startup-linux.html))
  2. Install Docker and Ansible on the instance <sub><sup>**On Amazon Linux use the following commands :**</sup></sub>
+  `yum install git`
+  `yum install docker`
   `pip uninstall ansible`
   `pip install ansible`
-  `yum install docker`
+  
 3. Fork the Awless git repository to your account
 4. Link your Travis-CI account with your GitHub account.
 5. Create IAM programmatic user with SSM run-command privileges.
