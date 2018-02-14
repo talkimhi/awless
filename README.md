@@ -59,17 +59,21 @@ More articles:
  1. Launch an AWS EC2 Instance with SSM Agent ([How-to](https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-install-startup-linux.html))
  2. Install Docker and Ansible on the instance using the following commands:
   `cd /tmp`
-   `wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm`
-   `yum install epel-release-latest-7.noarch.rpm`
+  `wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm`
+  `yum install epel-release-latest-7.noarch.rpm`
   `yum install ansible`
- `yum install docker`
+  `yum install docker`
 3. Fork the Awless git repository to your account
 4. Link your Travis-CI account with your GitHub account.
 5. Create IAM programmatic user with SSM run-command privileges.
-6. Encrypt the AWS Access and Secret keys into the TravisCI project.
-7. Add your AWS_REGION and AWS_INSTANCE_ID VARS to TravisCI Project.
+6. Encrypt the AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY vars into your TravisCI project.
+7. Add your AWS_REGION and AWS_INSTANCE_ID vars to your TravisCI Project.
+
+##### Should look like this:
+![](https://i.imgur.com/0IcGvZr.png)
+
 8. Commit and push changes to your Awless repository and check the flow.
-9. Enjoy !@
+10. Enjoy !@
 
 
 #  Apache License
