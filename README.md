@@ -1,4 +1,5 @@
 
+
 # DevOps Assignment
 #### CI/CD flow for AWLESS (open source)
 ![flow](https://i.imgur.com/gijyL8w.png)
@@ -56,12 +57,10 @@ More articles:
 
 #### Follow this step-by-step tutorial to make your own `awless` CI/CD flow.
 
- 1. Launch an AWS EC2 Instance with SSM Agent ([How-to](https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-install-startup-linux.html))
- 2. Install Docker and Ansible on the instance using the following commands:
-  `cd /tmp`
-  `wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm`
-  `yum install epel-release-latest-7.noarch.rpm`
-  `yum install ansible`
+ 1. Launch an AWS EC2 Instance with SSM Agent and SSM IAM Role ([How-to](https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-install-startup-linux.html))
+ 2. Install Docker and Ansible on the instance <sub><sup>**On Amazon Linux use the following commands :**</sup></sub>
+  `pip uninstall ansible`
+  `pip install ansible`
   `yum install docker`
 3. Fork the Awless git repository to your account
 4. Link your Travis-CI account with your GitHub account.
@@ -69,7 +68,7 @@ More articles:
 6. Encrypt the AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY vars into your TravisCI project.
 7. Add your AWS_REGION and AWS_INSTANCE_ID vars to your TravisCI Project.
 
-##### Should look like this:
+##### Your environment variables should look like this photo:
 ![](https://i.imgur.com/0IcGvZr.png)
 
 8. Commit and push changes to your Awless repository and check the flow.
