@@ -63,7 +63,9 @@ More articles:
   `yum install docker`
   `pip uninstall ansible`
   `pip install ansible`
-  
+  `pip install docker-py`
+  `service docker start`
+
 3. Fork the Awless git repository to your account
 4. Link your Travis-CI account with your GitHub account.
 5. Create IAM programmatic user with SSM run-command privileges.
