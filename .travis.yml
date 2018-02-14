@@ -6,4 +6,9 @@ go:
   - 1.9
 
 script:
-  - go test $(go list ./... | grep -v /vendor/)
+  - go test $(go list ./... | grep -v /vendor/) # test version
+
+after_success:
+  - pip install --user awscli # install aws cli w/o sudo
+  - export PATH=$PATH:$HOME/.local/bin # put aws in the path
+  - aws ssm send-command --document-name "AWS-RunAnsiblePlaybook" --instance-ids "$AWS_INSTANCE_ID" --max-errors 1 --parameters '{"extravars":["SSM=True"],"check":["False"],"playbook":["https://raw.githubusercontent.com/talkimhi/awless-ansible/master/playbooks/deploy.yml"]}' --timeout-seconds 600 --region $AWS_REGION
